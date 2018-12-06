@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  welfaredenmarklivemap:
+    image: ${DOCKER_REGISTRY-}welfaredenmarklivemap
+    build:
+      context: .
+      dockerfile: WelfareDenmarkLiveMap\Dockerfile
